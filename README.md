@@ -3,6 +3,6 @@ This is a testing repo!
 
 I am learning how to use git and github!
 
-Needed to substitute the new line with this line.
+Furthermore I will be using this Repo to store all the files I use for automation. The intention is for this to become my personal growth repo that can be showcased for my automation benchmarking. 
 
-Also want to see if I can merge the branch.
+Cheers!
