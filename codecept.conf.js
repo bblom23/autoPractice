@@ -5,16 +5,17 @@ const { setHeadlessWhen } = require('@codeceptjs/configure');
 setHeadlessWhen(process.env.HEADLESS);
 
 exports.config = {
-  tests: './*_test.js',
+  tests: './Tests/*contact-form-test.js',
   output: './output',
   helpers: {
     WebDriver: {
-      url: 'www.google.com',
+      url: 'https://www.hollandbrazil.com/?lang=en',
       browser: 'chrome'
     }
   },
   include: {
-    I: './steps_file.js'
+    I: './steps_file.js',
+    ContactFormPage: './pages/ContactFormPage.js',
   },
   bootstrap: null,
   mocha: {},
