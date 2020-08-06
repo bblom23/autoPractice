@@ -5,7 +5,7 @@ const { setHeadlessWhen } = require('@codeceptjs/configure');
 setHeadlessWhen(process.env.HEADLESS);
 
 exports.config = {
-  tests: './Tests/*contact-form-test.js',
+  tests: './Tests/*ContactFormTest.js',
   output: './output',
   helpers: {
     WebDriver: {
