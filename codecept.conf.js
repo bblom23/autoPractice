@@ -5,7 +5,7 @@ const { setHeadlessWhen } = require('@codeceptjs/configure');
 setHeadlessWhen(process.env.HEADLESS);
 
 exports.config = {
-  tests: './Tests/*ContactFormTest.js',
+  tests: './Tests/*HomePageTest.js',
   output: './output',
   helpers: {
     WebDriver: {
@@ -16,6 +16,8 @@ exports.config = {
   include: {
     I: './steps_file.js',
     ContactFormPage: './pages/ContactFormPage.js',
+    HomePage: './pages/HomePage.js',
+    globalScopeStep: './steps/GlobalScope.js',
   },
   bootstrap: null,
   mocha: {},
