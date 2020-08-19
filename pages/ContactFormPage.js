@@ -10,6 +10,8 @@ module.exports = {
     messageField: '.contact-form [name=Message]',
     clearButton: 'Clear',
     submitButton: 'Submit',
+    searchIcon: '.fa-search',
+    searchField: '#searchform-header',
     
   },
 
@@ -27,6 +29,13 @@ module.exports = {
 
   submitForm(){
     I.click(this.locators.submitButton);
+
+  },
+
+  conductSearch(searchField) {
+    I.forceClick(this.locators.searchIcon);
+    I.fillField(this.locators.searchField, searchField);
+    I.pressKey('Enter');
 
   }
 
